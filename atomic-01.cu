@@ -1,5 +1,17 @@
 /*
-    Use compiler option -arch=sm_60  
+    Compilation: 
+    
+    nvcc -arch=sm_60 atomic-01.cu
+    
+    Execution example:
+    
+    $ CUDA_VISIBLE_DEVICES=0 ./a.out 
+    atomic-01.cu 
+    5000000 
+    
+    $ CUDA_VISIBLE_DEVICES=0,1 ./a.out 
+    atomic-01.cu 
+    5000269
 */
 #include <stdio.h>
 #include <stdlib.h>
