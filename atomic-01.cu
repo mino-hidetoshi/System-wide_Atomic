@@ -1,3 +1,6 @@
+/*
+    Use compiler option -arch=sm_60  
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,7 +37,6 @@ void Count( )
 {
   int ntask = 5000000;
   int nv = 50 * WS;
-//  vector<u64> cols( nv );  // contents of this vector don't matter.
 
   // Multi Device Handling ----------------------
 
