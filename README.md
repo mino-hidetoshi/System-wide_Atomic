@@ -8,7 +8,7 @@ My experience is limitted to docker ontainer environments ( I cannot afford my o
 
     Compilation:
     
-    nvcc -arch=sm_60 atomic-01.cu
+    $ nvcc -arch=sm_60 atomic-01.cu
     
     Execution example:
     
