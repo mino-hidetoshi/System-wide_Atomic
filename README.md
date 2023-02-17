@@ -5,6 +5,9 @@ This code produces non-deterministic results on multi 4090 systems, it runs corr
 
 My experience is limitted to docker ontainer environments ( I cannot afford my own multi-4090 system ) and the phenomena can be different when it run directly on a physical server.
 
+
+    Compilation:
+    
     nvcc -arch=sm_60 atomic-01.cu
     
     Execution example:
