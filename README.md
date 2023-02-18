@@ -12,10 +12,12 @@ My experience is limitted to docker container environments ( I cannot afford my 
     
     Execution example:
     
+    # single 4090 execution
     $ CUDA_VISIBLE_DEVICES=0 ./a.out 
     atomic-01.cu 
     5000000 
     
+    # dual 4090 execution
     $ CUDA_VISIBLE_DEVICES=0,1 ./a.out 
     atomic-01.cu 
     5000269
