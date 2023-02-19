@@ -21,3 +21,12 @@ My experience is limitted to docker container environments ( I cannot afford my 
     $ CUDA_VISIBLE_DEVICES=0,1 ./a.out 
     atomic-01.cu 
     5000269
+
+-- added on 2023/02/19 --
+
+The issue this code exposes is found to be not a GPU issue but a docker container issue.
+Excamples I tested follow:
+
+  nvidia/cuda_11.3.0-devel-ubuntu18.04 : No good
+  nvidia/cuda_11.3.0-devel-ubuntu20.04 : Good
+  nvidia/cuda_12.0.0-devel-ubuntu22.04 : No good
